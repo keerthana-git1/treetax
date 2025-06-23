@@ -1,0 +1,111 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #734191; padding: 1rem; ">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#" style="font-size: 1.8rem; color: #0e2713;">Treetax </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="/about" >About</a> 
+        </li>
+        <li class="nav-item">
+         <a class="nav-link fw-bold" href="/contacts" >Contact</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link fw-bold" href="" >Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Service 1</a></li>
+            <li><a class="dropdown-item" href="#">Service 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Investments</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mutual Funds</a></li>
+            <li><a class="dropdown-item" href="#">Stocks</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="#">Corporate tie-up <span class="badge bg-warning text-dark">NEW</span></a>
+        </li>
+      </ul>
+
+      <div *ngIf="isLoggedIn(); else guest">
+     Welcome {{ adminEmail }} 
+    <button class="btn  text-black" style="background-color: rgb(162, 112, 162);"(click)="logout()">Logout</button>
+  </div>
+  <ng-template #guest>
+      <a class="btn btn-info text-white fw-bold" href="/admin/login">
+       Sign up <i class="bi bi-arrow-right"></i>
+      </a>
+      </ng-template>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark fixed-top" >
+  <a class="navbar-brand" href="/admin/home">Treetax Buddy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="btn btn-light text-dark"  href="/customer/login" style="color: white">Sign up</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/about" style="color: white">About</a> 
+       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contacts" style="color: white">Contact</a>
+      </li>
+    </ul> 
+  </div>
+</nav>  -->
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand col-md-9" style="color: rgb(22, 19, 19)">Treetax</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/login" style="color: white">Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/customer/login" style="color: white"
+          >Customer</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about" style="color: white">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contacts" style="color: white">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->

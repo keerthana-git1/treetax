@@ -1,0 +1,78 @@
+body {
+  background-repeat: no-repeat;
+  background-size: 1600px 700px;
+}
+
+@media (min-width: 576px) {
+  .container {
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+  }
+}
+@media (min-width: 992px) {
+  .container {
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+  }
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* nav.navbar {
+  height: 80px; 
+  line-height: 80px; 
+}
+nav.fixed-top {
+  height: 80px;
+}
+.navbar .nav-link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+main {
+  padding-top: 80px; 
+}
+
+ */
+
+.background-radial-gradient {
+  background-color: hsl(270, 45%, 40%); /* deep purple background */
+  background-image: 
+    radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 35%,  
+      hsl(218, 41%, 30%) 35%,  
+      hsl(218, 41%, 20%) 75%,  
+      hsl(218, 41%, 19%) 80%,  
+      transparent 80%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 35%) 35%,  /* light purple */
+      hsl(218, 41%, 30%) 35%,  /* medium purple */
+      hsl(218, 41%, 20%) 75%,  /* deeper purple */
+      hsl(218, 41%, 19%) 80%, 
+      transparent 80%);
+}
+
+.custom-heading {
+  text-align: center;
+  margin-top: 20px; 
+  margin-bottom: 40px;
+}
+ /* radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%); */
