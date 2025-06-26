@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, NgForm, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
-import { Admin } from '../admin';
-import { AdminService } from '../admin.service';
-import { AuthService } from '../auth.service';
+import { Admin } from '../admin/admin';
+import { AdminService } from '../admin/admin.service';
+import { AuthService } from '../admin/auth.service';
+
 
 @Component({
-  selector: 'app-admin-login',
-  templateUrl: './admin-login.component.html',
-  styleUrls: ['./admin-login.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class AdminLoginComponent implements OnInit {
+export class LoginComponent implements OnInit {
   admin = new Admin();
   erroMessage = '';
   ted:boolean=false;
