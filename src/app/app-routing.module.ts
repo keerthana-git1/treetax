@@ -9,15 +9,17 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 
 import { NoAuthGuard } from './components/admin/no-auth.guard';
 import { LoginComponent } from './components/login/login.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  {path:'home/',component:HomePageComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path:'home',component:HomePageComponent},
   {path:'login',component:LoginComponent,canActivate: [NoAuthGuard]},
   {path:'admin/register',component:AdminRegisterComponent,canActivate: [NoAuthGuard]},
   {path:'admin/home',component:AdminHomeComponent},
   {path:'contacts',component:ContactComponent},
   {path:'about',component:AboutComponent},
+  {path:'pricing',component:PricingComponent}
   
 ];
 

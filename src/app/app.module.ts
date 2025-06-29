@@ -9,13 +9,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminHomeComponent } from './components/admin/admin-home/admin-home.component';
-import { AdminMenuComponent } from './components/admin/admin-menu/admin-menu.component';
 import { AdminService } from './components/admin/admin.service';
-import { AdminFoodComponent } from './components/admin/admin-food/admin-food.component';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
+import { PricingComponent } from './components/pricing/pricing.component';
+
 
 
 
@@ -27,10 +27,10 @@ import { LoginComponent } from './components/login/login.component';
     AdminRegisterComponent,
     NavbarComponent,
     AdminHomeComponent,
-    AdminMenuComponent,
-    AdminFoodComponent,
     ContactComponent,
     AboutComponent,
+    PricingComponent,
+
 
     
   ],

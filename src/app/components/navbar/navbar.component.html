@@ -16,7 +16,7 @@
          <a class="nav-link fw-bold" href="/contacts" >Contact</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link fw-bold" href="" >Pricing</a>
+         <a class="nav-link fw-bold" href="/pricing" >Pricing</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Services</a>
@@ -32,9 +32,9 @@
             <li><a class="dropdown-item" href="#">Stocks</a></li>
           </ul>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link fw-bold" href="#">Corporate tie-up <span class="badge bg-warning text-dark">NEW</span></a>
-        </li>
+        </li> -->
       </ul>
 
       <div *ngIf="isLoggedIn(); else guest">
@@ -42,7 +42,7 @@
     <button class="btn  text-black" style="background-color: rgb(162, 112, 162);"(click)="logout()">Logout</button>
   </div>
   <ng-template #guest>
-      <a class="btn btn-info text-white fw-bold" href="/admin/login">
+      <a class="btn btn-info text-white fw-bold" href="/login">
        Sign up <i class="bi bi-arrow-right"></i>
       </a>
       </ng-template>
